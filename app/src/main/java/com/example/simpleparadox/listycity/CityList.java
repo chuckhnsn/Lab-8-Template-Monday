@@ -77,4 +77,14 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public City getFirstCity() {
+
+        if(cities.size() != 0) {
+            return cities.get(0);
+        }
+        else {
+            throw new IndexOutOfBoundsException();
+        }
+    }
 }
